@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "compiling rasterizer"
-TF_INC=/home/haoxianzhang/anaconda3/envs/py36tf18_tl/lib/python3.6/site-packages/tensorflow/include
-TF_LIB=/home/haoxianzhang/anaconda3/envs/py36tf18_tl/lib/python3.6/site-packages/tensorflow
+TF_INC=/usr/local/lib/python3.6/dist-packages/tensorflow_core/include
+TF_LIB=/usr/local/lib/python3.6/dist-packages/tensorflow_core
 # you might need the following to successfully compile the third-party library
 tf_mesh_renderer_path=$(pwd)/third_party/kernels/
 g++ -std=c++11 \
